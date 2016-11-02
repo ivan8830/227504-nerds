@@ -6,7 +6,7 @@
   </head>
   <body>
       <header class="main-header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="logo">
 					<a href="index.html"><img src="img/fb-icon.png" width="160" height="72"></a>
 				</div>  
@@ -35,11 +35,13 @@
 			</div>
       </header>
     <main>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="sorting">
 				<form action="#" method="get">
               		<div class="sorting-price">
-                		<p class="sorting-title">Стоимость</p>
+                		<p class="sorting-title">
+							Стоимость
+						</p>
               		</div>
             		<div class="grid">
 						<p class="sorting-title">Сетка</p>
@@ -58,27 +60,27 @@
 							</li>
 						</ul>   
               		</div>
-					<div class="features-item">
+					<div class="features-item-catalog">
 						<p class="sorting-title">Особенности:</p>
 							<ul class="features-sorting-list">
 								<li>
-									<input class="features" type="checkbox" name="SLD" id="slayder">
+									<input class="features-catalog" type="checkbox" name="SLD" id="slayder">
 									<label for="slayder">Слайдер</label>
 								</li>
 								<li>
-									<input class="features" type="checkbox" name="bloc" id="advantages">
+									<input class="features-catalog" type="checkbox" name="bloc" id="advantages">
 									<label for="advantages">Блок преимуществ</label>
 								</li>
 								<li>
-									<input class="features" type="checkbox" name="nws" id="news">
+									<input class="features-catalog" type="checkbox" name="nws" id="news">
 									<label for="news">Новости</label>
 								</li>
 								<li>
-									<input class="features" type="checkbox" name="gal" id="gallery">
+									<input class="features-catalog" type="checkbox" name="gal" id="gallery">
 									<label for="gallery">Галерея</label>
 								</li>
 								<li>
-									<input class="features" type="checkbox" name="bas" id="basket">
+									<input class="features-catalog" type="checkbox" name="bas" id="basket">
 									<label for="basket">Корзина</label>
 								</li>
 							</ul>
@@ -87,7 +89,7 @@
 				</form>
       		</div>
 				<div class="catalog">
-					<div class="sorting">
+					<div class="sorting-item">
 						<p class="sorting-title">Сортировать</p>
 						<div class="sorting-right">
 							<a class="sorting-view-item" href="#">по цене</a>
@@ -186,23 +188,23 @@
 					<div class="pagination">
 						<ul class="pagination-btn">
 							<li>
-								<a class="btn" href="#">1</a>
+								<a class="btn-pagin" href="#">1</a>
 							</li>
 							<li>
-								<a class="btn" href="#">2</a>
+								<a class="btn-pagin" href="#">2</a>
 							</li>
 							<li>
-								<a class="btn" href="#">3</a>
+								<a class="btn-pagin" href="#">3</a>
 							</li>
 							<li>
-								<a class="btn" href="#">Следующая</a>
+								<a class="btn-pagin" href="#">Следующая</a>
 							</li>
 						</ul>
 					</div>		
 				</div>
 			</div>
       </main>
-    	  <div class="map-wrapper">
+    	  <div class="map-wrapper clearfix">
 			<div class="map" id="map"></div>
 			<div class="container">
 				<section class="map-contacts">
@@ -213,8 +215,8 @@
             	</section>
 			</div>
 	  </div>
-      <footer class="main-footer">
-         <div class="container">
+      <footer class="main-footer clearfix">
+         <div class="container clearfix">
          	  <div class="footer-social">
 					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
