@@ -115,16 +115,18 @@ h3 {
 }
 
 .conteiner-example {
+	float: left;
 	width: 1160px;
 	min-height: 185px;
+	padding-bottom: 80px;
 }
 
 .example {
-	float: left;
+	display:inline-block;
 	width: 260px;
 	min-height: 120px;
-	margin-right: 40px;
-	margin-bottom: 80px;
+	margin-right: 20px;
+	
 }
 
 .example:last-child {
