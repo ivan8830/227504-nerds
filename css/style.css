@@ -11,12 +11,12 @@ h1 {
 
 h2 {
 	font-size: 55px;
-	color: black;
+	color: #000000;
 }
 
 h3 {
 	font-size: 18px;
-	color: black;
+	color: #000000;
 }
 
 .clearfix::after {
@@ -25,7 +25,6 @@ h3 {
 	clear: both;
 }
 .main-header {
-	min-height: 70px;
 	margin-bottom: 80px;
 }
 
@@ -38,51 +37,50 @@ h3 {
 
 .header-top {
 	width: 1160px;
-	min-height: 123px;
 	margin: 0 auto;
 }
 
 .logo {
 	float: left;
 	width: 160px;
-	min-height: 123px;
 }
 
 .main-navigator {
 	float: left;
-	width: 440px;
-	min-height: 123px;
 }
 
 .user-block {
 	float: right;
 	width: 150px;
-	min-height: 123px;
 }
 
 .header-title {
-	float: right;
-	width: 760px;
-	min-height: 80px;
-	margin-top: 57px;
-	margin-right: 350px;
+    text-align: center;
 }
 
 .slider {
 	width: 1160px;
-	min-height: 431px;
 	margin: 0 auto;
 }
 
-.slider-item {
-	float: left;
+.slider1 {
+    float: left;
 	width: 760px;
-	min-height: 431px;
+}
+
+.slider2 {
+    float: left;
+	width: 760px;
+}
+
+.slider3 {
+    float: left;
+	width: 760px;
 }
 
 .features {
 	width: 1100px;
-	min-height: 348px;
+    background: black;
 }
 
 .features-item {
@@ -122,11 +120,10 @@ h3 {
 }
 
 .example {
-	display:inline-block;
+	display: inline-block;
 	width: 260px;
 	min-height: 120px;
-	margin-right: 20px;
-	
+	margin-right: 20px;	
 }
 
 .example:last-child {
@@ -151,8 +148,7 @@ h3 {
 }
 
 .footer-social {
-	float: left
-	min-height: 78px; 
+	float: left; 
 	width: 260px;
 	margin-right: 20px;
 }
@@ -167,27 +163,22 @@ h3 {
 .sorting {
 	float: left;
 	width: 260px;
-	min-height: 780px;
 }
 
 .catalog {
 	float: left;
 	width: 880px;
-	min-height: 2116px;
 	margin-left: 20px;
 }
 
 .sorting-item {
-	float: left;
 	width: 760px;
 	min-height: 25px;
 	margin-left: 120px;
 }
 
 .catalog-wrapper {
-	float:left;
 	width: 780px;
-	min-height: 1926px;
 	margin-top: 60px;
 	margin-left: 120px;
 }
@@ -195,7 +186,6 @@ h3 {
 .catalog-item {
 	display: inline-block;
 	width: 360px;
-	min-height: 617px;
 	margin-right: 40px;
 	margin-bottom: 38px;
 	vertical-align: top;
@@ -215,13 +205,7 @@ h3 {
 }
 
 .btn-pagin {
-	float:left
+	display: inline-block;
 	width: 50px;
-	min-height: 50px;
 	margin-right: 48px;
-}
-
-.btn-pagin:last-child {
-	margin-right: 58px;
-	
 }
