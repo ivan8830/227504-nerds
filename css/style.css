@@ -25,13 +25,12 @@ h3 {
 	clear: both;
 }
 .main-header {
-	min-height: 70px;
 	margin-bottom: 80px;
 }
 
 .container {
 	width: 1200px;
-	min-height: 545px;
+	
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -50,14 +49,11 @@ h3 {
 
 .main-navigator {
 	float: left;
-	width: 440px;
-	min-height: 123px;
 }
 
 .user-block {
 	float: right;
 	width: 150px;
-	min-height: 123px;
 }
 
 .header-title {
@@ -74,10 +70,19 @@ h3 {
 	margin: 0 auto;
 }
 
-.slider-item {
+.slider1 {
 	float: left;
 	width: 760px;
-	min-height: 431px;
+}
+
+.slider2 {
+	float: left;
+	width: 760px;
+}
+
+.slyder3 {
+	float: left;
+	width: 760px;
 }
 
 .features {
@@ -122,11 +127,10 @@ h3 {
 }
 
 .example {
-	display:inline-block;
+	display: inline-block;
 	width: 260px;
 	min-height: 120px;
 	margin-right: 20px;
-	
 }
 
 .example:last-child {
