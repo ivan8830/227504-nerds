@@ -5,6 +5,7 @@
     <title>Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -30,10 +31,10 @@
                       </ul>
                   </nav>
                   <div class="user-block">
-                      <a class="btn" href="#">Корзина</a>        
+                      <a class="basket" href="#">Корзина</a>        
                   </div>
                 </div>
-				<div class="header-title clearfix">
+				<div class="header-title">
 					<h1>Магазин готовых шаблонов</h1>
 				</div>
           </div>
@@ -41,14 +42,27 @@
     <main>
 		<div class="container clearfix">
 			<div class="sorting">
+				<div class="sorting-price">
+                	<p class="sorting-title sorting-title-1">
+							Стоимость:
+					</p>
+              	</div>
 				<form action="#" method="get">
-              		<div class="sorting-price">
-                		<p class="sorting-title">
-							Стоимость
-						</p>
-              		</div>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="margin-left: 20%; width: 30%"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle=max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+						</div>
+					</div>
             		<div class="grid">
-						<p class="sorting-title">Сетка</p>
+						<p class="sorting-title">Сетка:</p>
 						<ul class="grid-sorting">
 							<li>
 								<input type="radio" name="grid-item" value="p" id="Ad">
@@ -89,18 +103,18 @@
 								</li>
 							</ul>
 					 </div>
-            		<a class="btn" type="submit">Показать</a>
+            		<a class="btn-form" type="submit">Показать</a>
 				</form>
       		</div>
 				<div class="catalog">
 					<div class="sorting-item">
-						<p class="sorting-title">Сортировать</p>
+						<p class="sorting-title">Сортировать:</p>
 						<div class="sorting-right">
 							<a class="sorting-view-item" href="#">по цене</a>
 							<a class="sorting-view-item" href="#">по типу</a>
 							<a class="sorting-view-item" href="#">по названию</a>
-							<a class="sorting-view-item" href="#">по названию</a>
-							<a class="sorting-view-item" href="#">по названию</a>
+							<a class="sorting-view-item" href="#"><img src="img/sort-down.png"></a>
+							<a class="sorting-view-item" href="#"><img src="img/sort-up.png"></a>
 						</div>
 					</div>
 					<div class="catalog-wrapper">
@@ -110,12 +124,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture sedona"></div>
 							<div class="catalog-item-about">
 								<h3>Sedona</h3>
 								<p>
-									Информационный сайт для туристов
+									Информационный сайт<br> для туристов
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -124,12 +139,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture pink"></div>
 							<div class="catalog-item-about">
 								<h3>Pink app</h3>
 								<p>
-									Продуктовый лендинг приложения для iOS и Android
+									Продуктовый лендинг<br> приложения для iOS и Android
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -138,12 +154,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture barbershop"></div>
 							<div class="catalog-item-about">
 								<h3>Barbershop</h3>
 								<p>
-									Сайт салона красоты. Для мужчин, да.
+									Сайт салона красоты.<br> Для мужчин, да.
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -152,12 +169,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture mishka"></div>
 							<div class="catalog-item-about">
 								<h3>Mishka</h3>
 								<p>
-									Интернет-магазин вязаных игрушек
+									Интернет-магазин<br> вязаных игрушек
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -166,12 +184,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture plus"></div>
 							<div class="catalog-item-about">
 								<h3>A plus</h3>
 								<p>
-									Лендинг курсов повышения квалификации
+									Лендинг курсов повышения<br> квалификации
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -180,12 +199,13 @@
 								<span></span>
 								<span></span>
 							</div>
+							<div class="picture kvas"></div>
 							<div class="catalog-item-about">
 								<h3>Кваст</h3>
 								<p>
-									Промо-сайт производителя крафтового кваса
+									Промо-сайт производителя<br> крафтового кваса
 								</p>
-								<a class="btn" href="#">9900 руб</a>
+								<a class="btn-catalog" href="#">9900 руб.</a>
 							</div>
 						</div>
 					</div>
@@ -209,12 +229,16 @@
 			</div>
       </main>
     	  <div class="map-wrapper clearfix">
-			<div class="map" id="map"></div>
-			<div class="container">
+			<div class="map" id="map">
+		  		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=iavC7nxiYzAZsRf-r_pXTPuaSkUYkFJc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		  	</div>
+			<div class="container clearfix">
 				<section class="map-contacts">
                 	<p class="footer">Nerds design studio</p>
-                	191186, г.Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                	Телефон: +7 (812) 275-75-75
+					<p class="adress">
+						191186, г.Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+					</p>
+					<p class="phone">Тел. +7 (812) 275-75-75</p>
                 	<a class="btn" href="#">Напишите нам</a>
             	</section>
 			</div>

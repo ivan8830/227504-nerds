@@ -5,7 +5,7 @@
     <title>Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -31,35 +31,51 @@
                       </ul>
                   </nav>
                   <div class="user-block">
-                      <a class="btn" href="#">Корзина</a>        
+                      <a class="basket" href="#">Корзина</a>
                   </div>
               </div>
             	<div class="slider">
-                	<div class="slider-item slider1">
-                    	<h2 class="slider-title ">Долго, дорого, скрупулезно</h2>
-                    	<p>
-							Математически выверенный дизайн для вашего сайта или мобильного приложения
-						</p>
-                    	<a class="btn" href="#">Узнать больше</a>
-                	</div>
-                 	<div class="slider-item slider2">
-                    	<h2 class="slider-title">Любим математику как никто другой</h2>
-                    	<p>
-							Никакого креатива, только математические формулы для расчета идеальных пропорций.
-						</p>
-                    	<a class="btn" href="#">Узнать больше</a>
-                	</div>
-                 	<div class="slider-item slider3">
-                    	<h2 class="slider-title">Только ночь, только хардкор</h2>
-                    	<p>
-							Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается
-						</p>
-                    	<a class="btn" href="#">Узнать больше</a>
-                	</div>
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					<div class="slides">
+						<div class="slide">
+							<div class="slider-item">
+								<div class="slider-title">Долго, дорого,<br> скрупулезно</div>
+								<p>
+									Математически выверенный дизайн<br> для вашего сайта или мобильного приложения
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slider-item">
+								<p class="slider-title">Любим математику<br> как никто другой</p>
+								<p>
+									Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slider-item">
+								<p class="slider-title">Только ночь,<br> только хардкор</p>
+								<p>
+									Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+					</div>
             	</div>
           </div>
       </header>
-      <main class="main-header">
+      <main>
 			<div class="container">
         		<section class="features clearfix">
 					<div class="features-item">
@@ -68,7 +84,7 @@
 						<p>
 							Мир никогда не будет прежним после того как увидит ваш сайт!
 						</p>
-						<a class="btn-red" href="#">Заказать</a>
+						<a class="btn red" href="#">Заказать</a>
 					</div>
 					<div class="features-item">
 						<img src="img/illustration-2.jpg" width="300" height="147">
@@ -76,7 +92,7 @@
 						<p>
 							Покорите топ-10 приложений в AppStore и Google Play
 						</p>
-						<a class="btn-green" href="#">Заказать</a>
+						<a class="btn green" href="#">Заказать</a>
 					</div>
 					<div class="features-item">
 						<img src="img/illustration-3.jpg" width="300" height="147">
@@ -84,48 +100,49 @@
 						<p>
 							Вы даже не подозреваете, насколько вы изумительны!
 						</p>
-						<a class="btn-yellow" href="#">Заказать</a>
+						<a class="btn yellow" href="#">Заказать</a>
 					</div>
         		</section>
 				<div class="conteiner-information clearfix">
 					<div class="index-content-left">
 						<p class="about-us">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-						<p>
-								Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы
+						<p class="about-us-text">
+								Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 						</p>
 						<h3>
-							Выполняем заказы на разработку:</h3>
+							Выполняем заказы на разработку:
+						</h3>
 						<ul class="orders">
-							<li>
+							<li class="orders-text">
 								Веб-сайтов любой сложности
 							</li>
-							<li>
+							<li class="orders-text">
 								Мобильных приложений для iOS и Android
 							</li>
-							<li>
+							<li class="orders-text">
 								Слайдшоу и видео для корпоративных презентаций
 							</li>
 						</ul>			        
 					</div>   
 					<div class="index-content-right">
 						<div class="benefits-logo">
-							<img class="photo" src="img/nerds-illustration.jpg" width="360" height="238">
+							<img class="photo" src="img/nerds-illustration.jpg" width="360" height="208">
 						</div>
-						<p>
+						<p class="indicators">
 							С 2004 года любим точность во всем:
 						</p>
 						<ul class="benefits">
 							<li>
-								<b class="benefits-figures">146%</b>
-								<p>Уровень самоотдачи</p>
+								<b class="benefits-figures">146<small class="top">%</small></b>
+								<p class="benefits-text">Уровень<br> самоотдачи</p>
 							</li>
 							<li>
-								<b class="benefits-figures">100%</b>
-								<p>Соблюдение сроков</p>				
+								<b class="benefits-figures">100<small class="top">%</small></b>
+								<p class="benefits-text">Соблюдение<br> сроков</p>				
 							</li>
 							<li>
-								<b class="benefits-figures">50%</b>
-								<p>Минимальная предоплата</p>
+								<b class="benefits-figures">50<small class="top">%</small></b>
+								<p class="benefits-text">Минимальная<br> предоплата</p>
 							</li>
 						</ul>
 					</div>
@@ -149,12 +166,16 @@
 		  </div>
       </main>
 	  <div class="map-wrapper">
-			<div class="map" id="map"></div>
+			<div class="map" id="map">
+		  		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=iavC7nxiYzAZsRf-r_pXTPuaSkUYkFJc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		  	</div>
 			<div class="container clearfix">
 				<section class="map-contacts">
                 	<p class="footer">Nerds design studio</p>
-                	191186, г.Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                	Телефон: +7 (812) 275-75-75
+					<p class="adress">
+						191186, г.Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+					</p>
+					<p class="phone">Тел. +7 (812) 275-75-75</p>
                 	<a class="btn" href="#">Напишите нам</a>
             	</section>
 			</div>
@@ -171,6 +192,7 @@
 					<p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
            	  </div>
 		</div>
-      </footer>	 
+      </footer>
+	  
   </body>
 </html>
