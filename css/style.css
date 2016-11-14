@@ -123,7 +123,7 @@ h3 {
 .slider {
 	position: relative;
 	width: 880px;
-	height: 310px;
+	height: 431px;
 	
 }
 
@@ -177,10 +177,16 @@ h3 {
 	color: #283136;
 }
 
+.slider-item p {
+	margin-bottom: 42px;
+}
+
 .slider-title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: bold;
+	margin-top: 85px;
+	margin-bottom: 28px;
 	color: #000000;
 }
 
@@ -824,5 +830,99 @@ span {
 .btn-pagin a {
 	text-decoration: none;
 	color: #000000;
+}
+
+.modal-content {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	width: 960px;
+	margin-left: -530px;
+	padding-top: 73px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 84px;
 	
+	color: #000000;
+	
+	background: #ffffff;
+	box-shadow: 0px 20px 40px 0.00px rgba(0, 1, 1, 0.75);
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+	width: 21px;
+	height: 21px;
+	
+	font-size: 0;
+	
+	background-color: #000000;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-content-close::before, 
+.model-content-close::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 2px;
+	width: 19px;
+	height: 4px;
+	background-color: red;
+	border-radius: 1px;
+}
+
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+
+.model-content-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+	margin: 0;
+	margin-bottom: 49px;
+	
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.modal-content .form-communication {
+	margin-top: 74px;
+	margin-bottom: 84px;
+}
+
+.form-communication input[type="signature"],
+.form-communication input[type="e-mail"] {
+	width: 360px;
+	margin: 0;
+	margin-right: 40px;
+	padding: 16px; 18px;
+	padding-right: 135px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial" sans-serif;
+	color: #a1a1a1;
+	background: #ffffff;
+	border: 2px solid #d7dcde;
+}
+
+.form-communication input[type="text-mail"] {
+	width: 760px;
+	margin: 0;
+	padding-top: 14px;
+	padding-right: 596px;
+	padding-left: 15px;
+	padding-bottom: 87px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial" sans-serif;
+	color: #a1a1a1;
+	background: #ffffff;
+	border: 2px solid #d7dcde;
+}
 }
