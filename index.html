@@ -197,15 +197,24 @@
 		  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 	  <h2 class="modal-content-title">Напишите нам</h2>
 		<form class="form-communication" action="#" method="post">
-			<label class="form-signature">
-				Ваше имя:<input class="icon-user" type="signature" name="signature" placeholder="Представьтесь, пожалуйста">
-			</label>
-			<label class="form-mail">
-				Ваше e-mail:<input class="icon-mail" type="e-mail" name="e-mail" placeholder="Для отправки ответа">
-			</label>
-			<label class="form-text">
-				Текст письма:<input class="icon-text" type="text-mail" name="text-mail" placeholder="В свободной форме">
-			</label>
+			<ul class="communication">
+				<li>
+					<label class="form-signature" for="signature">
+						Ваше имя:
+					</label><br>
+					<input class="icon-user" type="signature" id="signature" placeholder="Представьтесь, пожалуйста">
+				</li>
+				<li>
+					<label class="form-e-mail" for="e=mail">
+						Ваше e-mail:
+					</label><br>
+					<input class="icon-mail" type="e-mail" id="e-mail" placeholder="Для отправки ответа">
+				</li>
+				</ul>
+					<label class="form-text" for="text-mail">
+				 		Текст письма:
+					</label><br>
+					<textarea  id="text-mail" rows="3">В свободной форме</textarea>
 			<a class="btn-communication" type="submit">Отправить</a>
 		  </form>
 	  </div>

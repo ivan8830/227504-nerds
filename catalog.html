@@ -22,8 +22,8 @@
                           <li>
                               <a href="#">Клиент</a>
                           </li>
-                          <li>
-                              <a href="#">Магазин</a>
+                          <li class="activ">
+                              <a>Магазин</a>
                           </li>
                           <li>
                               <a href="#">Контакты</a>
@@ -109,13 +109,23 @@
 				<div class="catalog">
 					<div class="sorting-item">
 						<p class="sorting-title">Сортировать:</p>
-						<div class="sorting-right">
-							<a class="sorting-view-item" href="#">по цене</a>
-							<a class="sorting-view-item" href="#">по типу</a>
-							<a class="sorting-view-item" href="#">по названию</a>
-							<a class="sorting-view-item" href="#"><img src="img/sort-down.png"></a>
-							<a class="sorting-view-item" href="#"><img src="img/sort-up.png"></a>
-						</div>
+						<ul class="sorting-right">
+							<li class="active-sort">
+								<a class="sorting-view-item" href="#">по цене</a>
+							</li>
+							<li>
+								<a class="sorting-view-item" href="#">по типу</a>
+							</li>
+							<li>
+								<a class="sorting-view-item" href="#">по названию</a>
+							</li>
+							<li class="active-sort">
+								<a class="sorting-view-item" href="#"><img src="img/sort-down.png"></a>
+							</li>
+							<li>
+								<a class="sorting-view-item" href="#"><img src="img/sort-up.png"></a>
+							</li>
+						</ul>
 					</div>
 					<div class="catalog-wrapper">
 						<div class="catalog-item">
@@ -211,17 +221,17 @@
 					</div>
 					<div class="pagination">
 						<ul class="pagination-btn">
-							<li class="btn-pagin">
-								<a href="#">1</a>
+							<li class="active-pgn">
+								<a class="btn-pagin" href=#>1</a>
 							</li>
-							<li class="btn-pagin">
-								<a href="#">2</a>
+							<li>
+								<a class="btn-pagin" href="#">2</a>
 							</li>
-							<li class="btn-pagin">
-								<a href="#">3</a>
+							<li>
+								<a class="btn-pagin" href="#">3</a>
 							</li>
-							<li class="btn-pagin">
-								<a href="#">Следующая</a>
+							<li>
+								<a class="btn-pagin" href="#">Следующая</a>
 							</li>
 						</ul>
 					</div>		
