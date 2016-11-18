@@ -176,7 +176,7 @@
 						191186, г.Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p class="phone">Тел. +7 (812) 275-75-75</p>
-                	<a class="btn" href="#">Напишите нам</a>
+                	<a class="btn-write" href="#">Напишите нам</a>
             	</section>
 			</div>
 	  </div>
@@ -202,21 +202,66 @@
 					<label class="form-signature" for="signature">
 						Ваше имя:
 					</label><br>
-					<input class="icon-user" type="signature" id="signature" placeholder="Представьтесь, пожалуйста">
+					<input class="icon-user" type="signature" id="signature" placeholder="Представьтесь, пожалуйста" required>
 				</li>
 				<li>
-					<label class="form-e-mail" for="e=mail">
+					<label class="form-e-mail" for="e-mail">
 						Ваше e-mail:
 					</label><br>
-					<input class="icon-mail" type="e-mail" id="e-mail" placeholder="Для отправки ответа">
+					<input class="icon-mail" type="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
 				</li>
 				</ul>
 					<label class="form-text" for="text-mail">
 				 		Текст письма:
 					</label><br>
-					<textarea  id="text-mail" rows="3">В свободной форме</textarea>
-			<a class="btn-communication" type="submit">Отправить</a>
+					<textarea  id="text-mail" placeholder="В свободной форме"></textarea>
+			<button class="btn-communication" type="submit">Отправить</button>
 		  </form>
 	  </div>
+	  <script>
+	  	var link = document.querySelector(".btn-write");
+		var popup = document.querySelector(".modal-content");
+		var close = popup.querySelector(".modal-content-close");
+		var form = popup.querySelector(".form-communication");
+		var user = popup.querySelector("[id=signature]");
+		var mail = popup.querySelector("[id=e-mail]");
+		var storage = localStorage.getItem("user");
+		  
+		link.addEventListener("click", function(event){
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			if(storage){
+				user.value=storage;
+				mail.focus();
+			} else {
+				user.focus();
+			}
+			user.focus();
+		});
+		
+		close.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		});
+		
+		form.addEventListener("submit", function(event) {
+			if (!user.value|| !mail.value) {
+				event.preventDefault();
+				popup.classList.add("modal-error");
+			} else {
+				localStorage.setItem("user", user.value);
+			}
+		});
+		  
+		window.addEventListener("keydown", function(event) {
+			if (event.keyCode === 30) {
+				if (popup.classList.contains("modal-content-show")) {
+					popup.classList.remove("modal-content-show");
+					popup.classList.remove("modal-error");
+				}
+			}
+		});
+	  </script>
   </body>
 </html>

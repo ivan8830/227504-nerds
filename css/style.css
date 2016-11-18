@@ -67,7 +67,7 @@ h3 {
 
 .main-navigator .activ {
 	position: relative;
-	background-color: none;
+	background: none;
 }
 
 .main-navigator .activ::after {
@@ -467,17 +467,18 @@ h3 {
 	min-height: 185px;
 	margin-bottom: 80px;
 	padding-top: 46px;
-	border-top: 3px solid #cccccc;
-	border-bottom: 3px solid #cccccc;
+	border-top: 3px solid #eeeeee;
+	border-bottom: 3px solid #eeeeee;
 }
 
 .example {
 	display: inline-block;
 	width: 260px;
-	min-height: 120px;
+	min-height: 180px;
 	margin-right: 20px;
 	margin-bottom: 47px;
 	vertical-align: top;
+	position: relative;
 }
 
 .example:last-child {
@@ -492,11 +493,22 @@ h3 {
 	opacity: 0.2;
 }
 
+.example:not(:first-child)::before {
+	width: 2px;
+	height: 52px;
+	display: block;
+	background: #eeeeee;
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: 0;
+}
+
 .map-wrapper {
 	position: relative;
 }
 
-.map-wrapper .conteiner {
+.map-wrapper .container {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -532,7 +544,7 @@ h3 {
 	margin-bottom: 37px;
 }
 
-.map-contacts .btn {
+.btn-write {
 	display: block;
 	width: 219px;
 	padding: 10px 0;
@@ -547,7 +559,7 @@ h3 {
 	border-radius: 3px;	
 }
 
-.map-contacts .btn:hover {
+.btn-write:hover {
 	background: #e74246;
 }
 
@@ -584,12 +596,36 @@ h3 {
 	background: #e1e1e1 url("../img/vk.png") no-repeat center;
 }
 
+.social-btn-vk:hover {
+	background: #e74246 url("../img/vk.png") no-repeat center;
+}
+
+.social-btn-vk:active {
+	background: #d7373b url("../img/vk.png") no-repeat center;
+}
+
 .social-btn-fb {
 	background: #e1e1e1 url("../img/fb.png") no-repeat center;
 }
 
+.social-btn-fb:hover {
+	background: #e74246 url("../img/fb.png") no-repeat center;
+}
+
+.social-btn-fb:active {
+	background: #d7373b url("../img/fb.png") no-repeat center;
+}
+
 .social-btn-inst {
 	background: #e1e1e1 url("../img/insta.png") no-repeat center;
+}
+
+.social-btn-inst:hover {
+	background: #e74246 url("../img/insta.png") no-repeat center;
+}
+
+.social-btn-inst:active {
+	background: #d7373b url("../img/insta.png") no-repeat center;
 }
 
 .footer-title {
@@ -721,7 +757,7 @@ input[type="checkbox"] + label:hover {
 	color: #000000;
 }
 
-input[type="checkbox"] + label:disablet {
+input[type="radio"]:disabled + label {
 	opacity: 0.1;
 	color: #000000;
 }
@@ -731,8 +767,8 @@ input[type="checkbox"] + label::before {
 	display: block;
 	background: url("../img/sprite.png") no-repeat;
 	position: absolute;
-	width: 23px;
-    height: 23px;
+	width: 27px;
+    height: 27px;
     background-position: -5px -5px;
 	
 	top: 0;
@@ -741,8 +777,8 @@ input[type="checkbox"] + label::before {
 
 input[type="radio"] + label::before {
 	content: "";
-	width: 25px;
-	height: 27px;
+	width: 27px;
+	height: 26px;
 	top: 0;
 	left: 0;
 	background: url("../img/sprite.png") no-repeat;
@@ -761,7 +797,7 @@ input[type="checkbox"]:checked + label::after {
 	top: 0px;
 	left: 0px;
 	background: url("../img/sprite.png") no-repeat;
-	width: 23px;
+	width: 27px;
     height: 23px;
     background-position: -5px -38px;
 }
@@ -772,8 +808,8 @@ input[type="radio"]:checked + label::after {
 	top: 0px;
 	left: 0px;
 	background: url("../img/sprite.png") no-repeat;
-	width: 23px;
-    height: 27px;
+	width: 27px;
+    height: 26px;
     background-position: -5px -106px;
 }
 
@@ -925,6 +961,10 @@ input[type="radio"]:checked + label::after {
 	background: #e9e9e9;
 }
 
+.catalog-item:hover .catalog-item-header {
+	background: #4d4d4d;
+}
+
 span {
 	display: inline-block;
 	width: 14px;
@@ -1006,6 +1046,7 @@ span {
 	background: #eeeeee;
 	text-decoration: none;
 	border-radius: 3px;	
+	border: 3px transparent solid;
 }
 
 .pagination-btn li:last-child {
@@ -1033,6 +1074,33 @@ span {
 	box-sizing: border-box;
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateX(-2000px);
+	}
+	60% {
+		transform: translateX(50px);
+	}
+	80% {
+		transform: translateX(-20px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes shake {
+	0% 100% {
+		transform: translateX(0);
+	}
+	10% 30% 50% 70% 90% {
+		transform: translateX(-10px);
+	}
+	20% 40% 60% 80% {
+		transform: translateX(10px);
+	}
+}
+
 .modal-content {
 	position: absolute;
 	top: 180px;
@@ -1041,11 +1109,24 @@ span {
 	padding-top: 73px;
 	padding-left: 100px;
 	padding-bottom: 84px;
-	
 	color: #000000;
-	
 	background: #ffffff;
 	box-shadow: 0px 20px 40px 0.00px rgba(0, 1, 1, 0.75);
+	padding-right: 100px;
+	width: 960px;
+	box-sizing: border-box;
+	z-index: 1001;
+	display: none;
+}
+
+.modal-content-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
+	border-color: #e74246;
 }
 
 .modal-content-close {
@@ -1064,9 +1145,9 @@ span {
 .modal-content-close::after {
 	content: "";
 	position: absolute;
-	top: 8px;
-	left: 2px;
-	width: 19px;
+	top: 1px;
+	left: 5px;
+	width: 25px;
 	height: 4px;
 	background-color: red;
 	border-radius: 1px;
@@ -1104,10 +1185,28 @@ span {
 .communication {
 	list-style: none;
 	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 36px;
+	font-size: 0;
 }
 .communication li {
 	display: inline-block;
 	vertical-align: top;
+	width: 360px;
+	margin-right: 40px;
+}
+
+.communication li:last-child {
+	margin-right: 0;
+}
+
+.form-e-mail {
+	font-size: 16px;
+}
+
+.form-signature {
+	font-size: 16px;
 }
 
 .form-communication input[type="signature"],
@@ -1136,7 +1235,7 @@ span {
 	width: 760px;
 	margin-top: 12px;
 	padding-top: 14px;
-	padding-right: 596px;
+	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: 87px;
 	font-size: 16px;
@@ -1144,19 +1243,25 @@ span {
 	font-family: "Roboto", "Arial", sans-serif;
 	color: #a1a1a1;
 	background-color: #ffffff;
-	border: 2px solid #cccccc;
+	border: 2px solid #d7dcde;
 	border-radius: 3px;
 	box-sizing: border-box;
-	border-color: #d7dcde;
 }
 
-communication li:hover {
+.form-communication input:hover {
 	border-color: #b4b9bb;
 }
 
-input,
-textarea:focus {
-	border-color: #ffffff;
+.form-communication input:focus {
+	border-color: #000000;
+}
+
+.form-communication textarea:hover {
+	border-color: #b4b9bb;
+}
+
+.form-communication textarea:focus {
+	border-color: #000000;
 }
 
 .btn-communication {
