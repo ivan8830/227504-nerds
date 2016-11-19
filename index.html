@@ -5,14 +5,15 @@
     <title>Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">-->
   </head>
   <body>
       <header class="main-header">
           <div class="container">
               <div class="header-top clearfix">
                   <div class="logo">
-                      <img src="img/fb-icon.png" width="160" height="72">
+                      <img src="img/fb-icon.png" width="160" height="65">
                   </div>  
                   <nav class="main-navigator">
                       <ul>
@@ -20,7 +21,7 @@
                               <a href="#">Студия</a>
                           </li>
                           <li>
-                              <a href="#">Клиент</a>
+                              <a href="#">Клиенты</a>
                           </li>
                           <li>
                               <a href="catalog.html">Магазин</a>
@@ -46,7 +47,7 @@
 					<div class="slides">
 						<div class="slide">
 							<div class="slider-item">
-								<div class="slider-title">Долго, дорого,<br> скрупулезно</div>
+								<div class="slider-title">Долго, дорого,<br> скрупулезно.</div>
 								<p>
 									Математически выверенный дизайн<br> для вашего сайта или мобильного приложения
 								</p>
@@ -96,7 +97,7 @@
 					</div>
 					<div class="features-item">
 						<img src="img/illustration-3.jpg" width="300" height="147">
-						<b class="features-name">Презентация</b>
+						<b class="features-name">Презентации</b>
 						<p>
 							Вы даже не подозреваете, насколько вы изумительны!
 						</p>
@@ -255,7 +256,7 @@
 		});
 		  
 		window.addEventListener("keydown", function(event) {
-			if (event.keyCode === 30) {
+			if (event.keyCode === 27) {
 				if (popup.classList.contains("modal-content-show")) {
 					popup.classList.remove("modal-content-show");
 					popup.classList.remove("modal-error");
