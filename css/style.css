@@ -370,17 +370,18 @@ h3 {
 .conteiner-information {
 	width: 1160px;
 	min-height: 530px;
-	padding-top: 27px;
+	padding-top: 38px;
 	border-top: 3px solid #cccccc;
+	margin-bottom: -45px;
 }
 
 .index-content-left {
 	float: left;
-	padding: 0;
 	width: 660px;
+	padding: 0;
 	min-height: 373px;
+	margin-top: -11px;
 	margin-left: 22px;
-	margin-bottom: 41px;
 }
 
 .about-us {
@@ -391,7 +392,12 @@ h3 {
 }
 
 .about-us-text {
-	margin-bottom: 47px;
+	margin-bottom: 39px;
+}
+
+.index-content-left h3 {
+	margin-left: -1px;
+	margin-bottom: 24px;
 }
 
 .orders {
@@ -401,14 +407,19 @@ h3 {
 .orders-text {
 	position: relative;
 	display: block;
-	margin-bottom: 35px;
+	margin-left: -4px;
+	margin-bottom: 24px;
+}
+
+.order-text:last-child {
+	margin-bottom: 0;
 }
 
 .orders-text::after {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left: -40px;
+	left: -36px;
 	display: block;
 	width: 25px;
 	height: 2px;
@@ -418,30 +429,35 @@ h3 {
 .index-content-right {
 	float: right;
 	width: 380px;
+	margin-right: -40px;
 }
 
 .photo{
 	width: 360px;
 	height: 208px;
-	margin-bottom: 41px;
+	margin-bottom: 13px;
 }
 
 .indicators {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-left: 17px;
-	margin-bottom: 49px;
+	margin-bottom: 59px;
 }
 
 .benefits {
 	list-style: none;
 	padding: 0;
+	font-size: 0;
 }
 
 .benefits li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 26px;
+	margin-right: 13px;
+	margin-left: 2px;
+	
+	font-size: 16px;
 }
 
 .benefits li:last-child {
@@ -452,7 +468,6 @@ h3 {
 	font-size: 45px;
 	font-weight: bold;
 	line-height: 10px;
-	margin-bottom: 27px;
 	
 }
 
@@ -462,23 +477,27 @@ h3 {
 
 .benefits-text {
 	line-height: 18px;
+	margin-top: 19px;
 }
 
 .conteiner-example {
-	width: 1160px;
-	min-height: 185px;
-	margin-bottom: 80px;
-	padding-top: 46px;
 	border-top: 3px solid #eeeeee;
 	border-bottom: 3px solid #eeeeee;
+	margin-bottom: 80px;
+
+}
+
+.example-block {
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
 }
 
 .example {
 	display: inline-block;
 	width: 260px;
-	min-height: 180px;
-	margin-right: 20px;
-	margin-bottom: 47px;
+	margin-right: 37px;
+	margin-bottom: -7px;
 	vertical-align: top;
 	position: relative;
 }
@@ -520,7 +539,9 @@ h3 {
 .map-contacts {
 	position: absolute;
 	padding-left: 54px;
-	width: 280px;
+	margin-top: 2px;
+	margin-left: 20px;
+	width: 265px;
 	min-height: 309px;
 	background: #ffffff;
 	text-align: left;
@@ -529,28 +550,30 @@ h3 {
 }
 
 .footer {
-	margin-top: 54px;
-	margin-bottom: 32px;
+	margin-top: 52px;
+	margin-left: -4px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 .adress {
 	color:#666666;
 	line-height: 18px;
-	margin-bottom: 19px;
+	margin-bottom: 2px;
 }
 
 .phone {
 	color: #666666;
-	margin-bottom: 37px;
+	margin-bottom: 35px;
 }
 
 .btn-write {
 	display: block;
 	width: 219px;
-	padding: 10px 0;
-	margin-top: 25px;
+	padding: 13px 0;
+	margin-left: -4px;
 	margin-bottom: 47px;
 	font-size: 16px;
 	color: #ffffff;
@@ -567,19 +590,21 @@ h3 {
 
 .main-footer {
 	margin: 0;
+	padding: 0;
 }
 
 .footer-social {
 	float: left; 
-	width: 280px;
+	
 }
 
 .social-btn {
 	display: inline-block;
 	width: 79px;
 	height: 79px;
-	margin-top: 69px;
-	margin-right: 12px;
+	margin-top: 68px;
+	margin-left: 22px;
+	margin-right: -14px;
 	border-radius: 50px;
 	font-size: 0px;
 	vertical-align: top;
@@ -632,23 +657,25 @@ h3 {
 
 .footer-title {
 	float: left;
+	margin: 0;
+	padding: 0;
 	width: 547px;
-	margin-left: 140px;
+	margin-left: 135px;
 }
 
 .social-header {
 	font-size: 36px;
 	font-weight: bold;
-	line-height: 36px;
-	margin-top: 78px;
-	margin-bottom: 12px;
+	margin-left: 2px;
+	margin-top: 79px;
+	margin-bottom: 10px;
 }
 
 .social-text {
 	font-size: 16px;
 	line-height: 22px;
 	color: #666666;
-	margin-bottom: 76px;
+	margin-left: 4px;
 }
 
 .sorting {
