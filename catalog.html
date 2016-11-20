@@ -12,7 +12,7 @@
           <div class="container">
               <div class="header-top clearfix">
                   <div class="logo">
-                     <a href="index.html"><img src="img/fb-icon.png" width="160" height="72"></a>
+                     <a href="index.html"><img src="img/fb-icon.png" width="160" height="65"></a>
                   </div>  
                   <nav class="main-navigator">
                       <ul>
@@ -20,7 +20,7 @@
                               <a href="#">Студия</a>
                           </li>
                           <li>
-                              <a href="#">Клиент</a>
+                              <a href="#">Клиенты</a>
                           </li>
                           <li class="activ">
                               <a>Магазин</a>
@@ -51,21 +51,21 @@
 					<div class="range-filter">
 						<div class="range-controls">
 							<div class="scale">
-								<div class="bar" style="margin-left: 20%; width: 30%"></div>
+								<div class="bar" style="margin-left: 10px; width: 60%"></div>
 							</div>
 							<div class="toggle toggle-min"></div>
 							<div class="toggle toggle-max"></div>
 						</div>
 						<div class="price-controls">
-							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							<label class="min-price">от <input name="min-price" type="text" value="0 "></label>
+							<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
 						</div>
 					</div>
             		<div class="grid">
 						<p class="sorting-title">Сетка:</p>
 						<ul class="grid-sorting">
 							<li>
-								<input type="radio" name="grid-item" value="p" id="Ad" disabled>
+								<input type="radio" name="grid-item" value="p" id="Ad" checked>
 								<label for="Ad">Адаптивная</label>
 							</li>
 							<li>
@@ -73,7 +73,7 @@
 								<label for="Fix">Фиксированная</label>
 							</li>
 							<li>
-								<input type="radio" name="grid-item" value="p" id="Rez">
+								<input type="radio" name="grid-item" value="p" id="Rez" disabled>
 								<label for="Rez">Резиновая</label>
 							</li>
 						</ul>   
@@ -82,7 +82,7 @@
 						<p class="sorting-title">Особенности:</p>
 							<ul class="features-sorting-list">
 								<li>
-									<input class="features-catalog" type="checkbox" name="SLD" id="slayder">
+									<input class="features-catalog" type="checkbox" name="SLD" id="slayder" checked>
 									<label for="slayder">Слайдер</label>
 								</li>
 								<li>
@@ -90,7 +90,7 @@
 									<label for="advantages">Блок преимуществ</label>
 								</li>
 								<li>
-									<input class="features-catalog" type="checkbox" name="nws" id="news">
+									<input class="features-catalog" type="checkbox" name="nws" id="news" checked>
 									<label for="news">Новости</label>
 								</li>
 								<li>
@@ -136,11 +136,11 @@
 							</div>
 							<img src="img/img-sedona.jpg">
 							<div class="catalog-item-about">
-								<h3>Sedona</h3>
+								<h3 class="name-catalog">Sedona</h3>
 								<p>
 									Информационный сайт<br> для туристов
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -155,7 +155,7 @@
 								<p>
 									Продуктовый лендинг<br> приложения для iOS и Android
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -170,7 +170,7 @@
 								<p>
 									Сайт салона красоты.<br> Для мужчин, да.
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -185,7 +185,7 @@
 								<p>
 									Интернет-магазин<br> вязаных игрушек
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -200,7 +200,7 @@
 								<p>
 									Лендинг курсов повышения<br> квалификации
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 						<div class="catalog-item">
@@ -215,14 +215,14 @@
 								<p>
 									Промо-сайт производителя<br> крафтового кваса
 								</p>
-								<a class="btn-catalog" href="#">9900 руб.</a>
+								<a class="btn-catalog" href="#">9 900 руб.</a>
 							</div>
 						</div>
 					</div>
 					<div class="pagination">
 						<ul class="pagination-btn">
 							<li class="active-pgn">
-								<a class="btn-pagin" href=#>1</a>
+								<a class="btn-pagin" href="#">1</a>
 							</li>
 							<li>
 								<a class="btn-pagin" href="#">2</a>
@@ -238,7 +238,7 @@
 				</div>
 			</div>
       </main>
-    	  <div class="map-wrapper clearfix">
+    	  <div class="map-wrapper">
 			<div class="map" id="map">
 		  		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=iavC7nxiYzAZsRf-r_pXTPuaSkUYkFJc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 		  	</div>
@@ -246,10 +246,10 @@
 				<section class="map-contacts">
                 	<p class="footer">Nerds design studio</p>
 					<p class="adress">
-						191186, г.Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+						191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
 					</p>
-					<p class="phone">Тел. +7 (812) 275-75-75</p>
-                	<a class="btn" href="#">Напишите нам</a>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
+                	<a class="btn-write" href="#">Напишите нам</a>
             	</section>
 			</div>
 	  </div>
@@ -266,5 +266,31 @@
            	  </div>
 		</div>
       </footer>
+	   <div class="modal-content">
+		  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+	  <h2 class="modal-content-title">Напишите нам</h2>
+		<form class="form-communication" action="#" method="post">
+			<ul class="communication">
+				<li>
+					<label class="form-signature" for="signature">
+						Ваше имя:
+					</label><br>
+					<input class="icon-user" type="signature" id="signature" placeholder="Представьтесь, пожалуйста" required>
+				</li>
+				<li>
+					<label class="form-e-mail" for="e-mail">
+						Ваше e-mail:
+					</label><br>
+					<input class="icon-mail" type="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
+				</li>
+				</ul>
+					<label class="form-text" for="text-mail">
+				 		Текст письма:
+					</label><br>
+					<textarea  id="text-mail" placeholder="В свободной форме"></textarea>
+			<button class="btn-communication" type="submit">Отправить</button>
+		  </form>
+	  </div>
   </body>
+	<script src="js/script.js"></script>
 </html>

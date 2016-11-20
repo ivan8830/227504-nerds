@@ -76,9 +76,9 @@ h3 {
 	width: 83px;
 	height: 2px;
 	background-color: #fb565a;
-	right: 20px;
 	bottom: 0;
-	left: 20px;
+	left: 0;
+	right: 20px;
 }
 
 .main-navigator .activ a:hover {
@@ -147,12 +147,13 @@ h3 {
 
 .header-title {
     text-align: center;
-	margin-top: 82px;
-	margin-bottom: 116px;
+	margin-left: 24px;
+	margin-top: 86px;
+	margin-bottom: -27px;
 }
 
 .header-title h1 {
-	padding-bottom: 116px;
+	padding-bottom: 125px;
 }
 
 .slider {
@@ -522,7 +523,7 @@ h3 {
 	content: "";
 	position: absolute;
 	top: 60px;
-	left: 0;
+	left: -20px;
 }
 
 .map-wrapper {
@@ -594,7 +595,8 @@ h3 {
 }
 
 .footer-social {
-	float: left; 
+	float: left;
+	
 	
 }
 
@@ -605,6 +607,7 @@ h3 {
 	margin-top: 68px;
 	margin-left: 22px;
 	margin-right: -14px;
+	margin-bottom: 60px;
 	border-radius: 50px;
 	font-size: 0px;
 	vertical-align: top;
@@ -681,10 +684,27 @@ h3 {
 .sorting {
 	float: left;
 	width: 260px;
+	margin-left: 22px;
+	font-size: 16px;
 }
 
+.sorting-title {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 18px;
+}
+
+.sorting-title-1 {
+	margin-bottom: 53px;
+}
+
+
+
 .range-filter {
-	width: 240px;
+	width: 261px;
+	
 }
 
 .range-controls {
@@ -723,21 +743,26 @@ h3 {
 }
 
 .range-controls .toggle-min {
-	left: 50px;
+	left: 18px;
 }
 
 .range-controls .toggle-max {
-	left: 110px;
+	left: 160px;
 }
 
 .price-controls {
 	font-size: 0;
+	text-transform: uppercase;
 }
 
 .price-controls label {
 	font-size: 16px;
 	display: inline-block;
 	width: 50%;
+}
+
+.price-controls:last-child {
+	margin-right: 0;
 }
 
 .max-price {
@@ -748,8 +773,8 @@ h3 {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	width: 60px;
-	margin-left: 10px;
-	margin-bottom: 62px;
+	margin-left: 11px;
+	margin-bottom: 55px;
 	padding: 8px 10px;
 	text-align: center;
 	color: #283136;
@@ -774,7 +799,7 @@ input[type="radio"] + label {
 	display: block;
 	margin: 10px 0;
 	line-height: 20px;
-	padding-left: 45px;
+	padding-left: 36px;
 	position: relative;
 	cursor: pointer;
 	opacity: 0.4;
@@ -842,29 +867,17 @@ input[type="radio"]:checked + label::after {
     background-position: -5px -106px;
 }
 
-.sorting-title {
-	text-transform: uppercase;
-	font-weight: bold;
-	line-height: 30px;
-	margin-top: 0;
-	margin-bottom: 27px;
-}
-
-.sorting-title-1 {
-	margin-bottom: 56px;
-}
-
 .grid-sorting {
 	list-style: none;
 	padding: 0;
 }
 
 .grid-sorting li {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .grid-sorting li:last-child {
-	margin-bottom: 57px;
+	margin-bottom: 48px;
 }
 
 .features-sorting-list {
@@ -873,17 +886,17 @@ input[type="radio"]:checked + label::after {
 }
 
 .features-sorting-list li {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .features-sorting-list li:last-child {
-	margin-bottom: 50px;
+	margin-bottom: 51px;
 }
 
 .btn-form {
 	display: block;
 	width: 260px;
-	padding: 10px 0;
+	padding: 13px 0;
 	font-size: 16px;
 	color: #000000;
 	border: none;
@@ -904,17 +917,20 @@ input[type="radio"]:checked + label::after {
 
 .sorting-item {
 	position: relative;
+	font-size: 0;
 	width: 760px;
 	min-height: 25px;
-	margin-left: 120px;
+	margin-left: 118px;
+	margin-top: -2px;
 }
 
 .sorting-right {
 	display: inline-block;
 	vertical-align: top;
+	font-size: 14px;
 	position: absolute;
-	top: -16px;
-	right: 10px;
+	margin-left: 360px;
+	margin-top: -41px;
 	list-style: none;
 	text-transform: uppercase;
 }
@@ -922,15 +938,19 @@ input[type="radio"]:checked + label::after {
 .sorting-right li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 25px;
+	margin-right: 24px;
+}
+
+.sorting-right li:nth-child(2) {
+	margin-right: 22px;
 }
 
 .sorting-right li:nth-child(3) {
-	margin-right: 40px;
+	margin-right: 45px;
 }
 
 .sorting-right li:nth-child(4) {
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .sorting-right li:last-child {
@@ -960,15 +980,15 @@ input[type="radio"]:checked + label::after {
 
 .catalog-wrapper {
 	width: 780px;
-	margin-top: 60px;
-	margin-left: 120px;
+	margin-top: 53px;
+	margin-left: 118px;
 }
 
 .catalog-item {
 	display: inline-block;
 	width: 360px;
-	margin-right: 40px;
-	margin-bottom: 38px;
+	margin-right: 35px;
+	margin-bottom: 33px;
 	vertical-align: top;
 	border: 1px solid #e9e9e9;
 	border-radius: 3px;
@@ -978,6 +998,11 @@ input[type="radio"]:checked + label::after {
 
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
+}
+
+.catalog-item:nth-child(4) {
+	margin-right: 0;
+	margin-bottom: 38px;
 }
 
 .catalog-item:hover .catalog-item-about {
@@ -1002,17 +1027,25 @@ span {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	margin-top: 13px;
+	margin-top: 12px;
 	margin-left: 16px;
-	margin-right: -6px;
 	border-radius: 50px;
 	background: #ffffff;
+}
+
+span:nth-child(2) {
+	margin-left: 5px;
+}
+
+span:last-child {
+	margin-left: 5px;
 }
 
 .catalog-item-about {
 	color: #6f6f6f;
 	text-align: center;
-	display: none;
+	height: 231px;
+	display: block;
 	background: #eeeeee;
 	position: absolute;
 	left: 0;
@@ -1023,13 +1056,20 @@ span {
 
 
 .catalog-item-about h3 {
-	margin-top: 35px;
+	margin-top: 28px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.catalog-item-about p {
+	font-size: 16px;
+	line-height: 19px;
 }
 
 .btn-catalog {
 	display: block;
 	width: 200px;
-	padding: 10px 0;
+	padding: 13px 0;
 	margin-top: 30px;
 	margin-left: 80px;
 	margin-bottom: 43px;
@@ -1052,7 +1092,7 @@ span {
 
 .pagination {
 	width: 480px;
-	margin-top: 60px;
+	margin-top: 25px;
 	margin-left: 120px;
 	margin-bottom: 60px;
 }
@@ -1068,9 +1108,9 @@ span {
 }
 
 .pagination-btn li {
-	width: 50px;
+	width: 47px;
 	padding: 10px 0;
-	margin-right: 11px;
+	margin-right: 7px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #000000;
@@ -1080,6 +1120,14 @@ span {
 	text-decoration: none;
 	border-radius: 3px;	
 	border: 3px transparent solid;
+}
+
+.pagination-btn li:nth-child(2) {
+	margin-right: 4px;
+}
+
+.pagination-btn li:nth-child(3) {
+	margin-right: 4px;
 }
 
 .pagination-btn li:last-child {
@@ -1301,7 +1349,7 @@ span {
 	display: block;
 	width: 260px;
 	margin-top: 47px;
-	padding: 10px 0;
+	padding: 13px 0;
 	font-size: 16px;
 	color: #ffffff;
 	border: none;
