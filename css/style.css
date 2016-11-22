@@ -449,7 +449,7 @@ h3 {
 .benefits li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 13px;
+	margin-right: 20px;
 	margin-left: 2px;	
 	font-size: 16px;
 }
@@ -465,7 +465,7 @@ h3 {
 }
 
 .top {
-    top: -0.8em;
+    top: -0.6em;
     font-size: 25px; 
 }
 
@@ -1177,7 +1177,6 @@ input[type="radio"]:checked + label::after {
 	margin-left: -530px;
 	padding-top: 73px;
 	padding-left: 100px;
-	padding-bottom: 84px;
 	color: #000000;
 	background: #ffffff;
 	box-shadow: 0px 20px 40px 0.00px rgba(0, 1, 1, 0.75);
@@ -1242,11 +1241,10 @@ input[type="radio"]:checked + label::after {
 	margin: 0;
 	margin-bottom: 49px;	
 	font-size: 45px;
-	line-height: 45px;
+	font-weight: bold;
 }
 
 .modal-content .form-communication {
-	margin-top: 74px;
 	margin-bottom: 84px;
 }
 
@@ -1350,33 +1348,4 @@ input[type="radio"]:checked + label::after {
 
 .form-text {
 	font-weight: bold;
-}
-.sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-checkbox-off {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -5px;
-}
-
-.sprite-checkbox-on {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -38px;
-}
-
-.sprite-radio-off {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -71px;
-}
-
-.sprite-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -106px;
 }
