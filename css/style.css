@@ -37,7 +37,6 @@ h3 {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
 }
 
 .header-top {
@@ -72,12 +71,11 @@ h3 {
 .main-navigator .activ::after {
 	content: "";
 	position: absolute;
-	width: 83px;
 	height: 2px;
 	background-color: #fb565a;
 	bottom: 0;
 	left: 0;
-	right: 20px;
+	right: 0;
 }
 
 .main-navigator .activ a:hover {
@@ -87,7 +85,6 @@ h3 {
 .main-navigator a {
 	display: block;
 	margin-top: 74px;
-	margin-right: 48px;
 	color: #000000;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -111,6 +108,7 @@ h3 {
 .main-navigator li {
 	display: inline-block;
 	vertical-align: top;
+    margin-right: 48px;
 	font-size: 16px;
 	line-height: 30px;
 }
@@ -385,7 +383,7 @@ h3 {
 	margin-bottom: 32px;
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .about-us-text {
@@ -467,7 +465,8 @@ h3 {
 }
 
 .top {
-	vertical-align: top;
+    top: -0.8em;
+    font-size: 25px; 
 }
 
 .benefits-text {
@@ -653,7 +652,6 @@ h3 {
 	float: left;
 	margin: 0;
 	padding: 0;
-	width: 547px;
 	margin-left: 135px;
 }
 
@@ -1010,7 +1008,7 @@ input[type="radio"]:checked + label::after {
 	display: block;
 }
 
-span {
+.around {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -1020,11 +1018,11 @@ span {
 	background: #ffffff;
 }
 
-span:nth-child(2) {
+.around:nth-child(2) {
 	margin-left: 5px;
 }
 
-span:last-child {
+.around:last-child {
 	margin-left: 5px;
 }
 
@@ -1279,8 +1277,7 @@ span:last-child {
 	font-size: 16px;
 }
 
-.form-communication input[type="signature"],
-.form-communication input[type="e-mail"] {
+.form-communication input[type="text"] {
 	width: 360px;
 	margin-right: 40px;
 	margin-top: 12px;
