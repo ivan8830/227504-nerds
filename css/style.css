@@ -155,7 +155,6 @@ h3 {
 
 .slider {
 	position: relative;
-	width: 1160px;
 	height: 425px;	
 }
 
@@ -258,11 +257,11 @@ h3 {
 }
 
 .slide:nth-child(2) {
-	background: url("../img/slider-2.jpg") no-repeat 105% -7px;
+	background: url("../img/slider-2.jpg") no-repeat 100% -7px;
 }
 
 .slide:nth-child(3) {
-	background: url("../img/slider-3.jpg") no-repeat 105% -5px;
+	background: url("../img/slider-3.jpg") no-repeat 100% -5px;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) { 
@@ -903,6 +902,24 @@ input[type="radio"]:checked + label::after {
 	background: #d5d5d5;
 }
 
+.sorting-title-catalog {
+ text-transform: uppercase;
+ font-size: 18px;
+ font-weight: bold;
+ margin-top: 4px;
+ margin-bottom: 18px;
+ float: left;
+ margin: 0;
+}
+
+.sorting-title {
+ text-transform: uppercase;
+ font-size: 18px;
+ font-weight: bold;
+ margin-top: 4px;
+ margin-bottom: 18px;
+}
+
 .sorting-item {
 	position: relative;
 	font-size: 0;
@@ -913,20 +930,21 @@ input[type="radio"]:checked + label::after {
 }
 
 .sorting-right {
-	display: inline-block;
-	vertical-align: top;
-	font-size: 14px;
-	position: absolute;
-	margin-left: 360px;
-	margin-top: -41px;
-	list-style: none;
-	text-transform: uppercase;
+ display: inline-block;
+ vertical-align: top;
+ font-size: 0;
+ list-style: none;
+ text-transform: uppercase;
+ float: right;
+ margin: 0;
+ padding: 0;
 }
 
 .sorting-right li {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 24px;
+    font-size: 14px;
 }
 
 .sorting-right li:nth-child(2) {
