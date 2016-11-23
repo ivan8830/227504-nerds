@@ -933,11 +933,11 @@ input[type="radio"]:checked + label::after {
 }
 
 .sorting-right li:nth-child(3) {
-	margin-right: 45px;
+	margin-right: 47px;
 }
 
 .sorting-right li:nth-child(4) {
-	margin-right: 15px;
+	margin-right: 16px;
 }
 
 .sorting-right li:last-child {
@@ -948,12 +948,7 @@ input[type="radio"]:checked + label::after {
 	text-decoration: none;
 	color: #000000;
 	text-decoration: none;
-	margin-right: 25px;
 	opacity: 0.3;
-}
-
-.sorting-view-item:last-child {
-	margin-right: 0;
 }
 
 .sorting-view-item:hover {
