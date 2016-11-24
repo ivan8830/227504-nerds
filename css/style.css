@@ -691,6 +691,7 @@ h3 {
 
 .range-filter {
 	width: 261px;
+	margin-top: 53px;
 	
 }
 
@@ -876,7 +877,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .features-sorting-list li:last-child {
-	margin-bottom: 51px;
+	margin-bottom: 55px;
 }
 
 .btn-form {
@@ -903,21 +904,21 @@ input[type="radio"]:checked + label::after {
 }
 
 .sorting-title-catalog {
- text-transform: uppercase;
- font-size: 18px;
- font-weight: bold;
- margin-top: 4px;
- margin-bottom: 18px;
- float: left;
- margin: 0;
+ 	text-transform: uppercase;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	margin-bottom: 18px;
+ 	float: left;
+ 	margin: 0;
+ 	margin-top: 4px;
 }
 
 .sorting-title {
- text-transform: uppercase;
- font-size: 18px;
- font-weight: bold;
- margin-top: 4px;
- margin-bottom: 18px;
+ 	text-transform: uppercase;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	margin-top: 4px;
+ 	margin-bottom: 18px;
 }
 
 .sorting-item {
@@ -930,33 +931,34 @@ input[type="radio"]:checked + label::after {
 }
 
 .sorting-right {
- display: inline-block;
- vertical-align: top;
- font-size: 0;
- list-style: none;
- text-transform: uppercase;
- float: right;
- margin: 0;
- padding: 0;
+ 	display: inline-block;
+ 	vertical-align: top;
+	font-size: 0;
+ 	list-style: none;
+ 	text-transform: uppercase;
+ 	float: right;
+	margin: 0;
+ 	padding: 0;
+ 	margin-top: 5px;
 }
 
 .sorting-right li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 24px;
+	margin-right: 25px;
     font-size: 14px;
 }
 
 .sorting-right li:nth-child(2) {
-	margin-right: 22px;
+	margin-right: 27px;
 }
 
 .sorting-right li:nth-child(3) {
-	margin-right: 47px;
+	margin-right: 50px;
 }
 
 .sorting-right li:nth-child(4) {
-	margin-right: 16px;
+	margin-right: 18px;
 }
 
 .sorting-right li:last-child {
@@ -1159,28 +1161,35 @@ input[type="radio"]:checked + label::after {
 
 @keyframes bounce {
 	0% {
-		transform: translateX(-2000px);
+		-webkit-transform: translateX(-2000px);
+		        transform: translateX(-2000px);
 	}
 	60% {
-		transform: translateX(50px);
+		-webkit-transform: translateX(50px);
+		        transform: translateX(50px);
 	}
 	80% {
-		transform: translateX(-20px);
+		-webkit-transform: translateX(-20px);
+		        transform: translateX(-20px);
 	}
 	100% {
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 }
 
 @keyframes shake {
 	0% 100% {
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 	10% 30% 50% 70% 90% {
-		transform: translateX(-10px);
+		-webkit-transform: translateX(-10px);
+		        transform: translateX(-10px);
 	}
 	20% 40% 60% 80% {
-		transform: translateX(10px);
+		-webkit-transform: translateX(10px);
+		        transform: translateX(10px);
 	}
 }
 
@@ -1203,11 +1212,13 @@ input[type="radio"]:checked + label::after {
 
 .modal-content-show {
 	display: block;
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.6s;
+			animation: bounce 0.6s;
 }
 
 .modal-error {
-	animation: shake 0.6s;
+	-webkit-animation: shake 0.6s;
+			animation: shake 0.6s;
 	border-color: #e74246;
 }
 
@@ -1236,11 +1247,13 @@ input[type="radio"]:checked + label::after {
 }
 
 .modal-content-close::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
 }
  
 .modal-content-close:hover {
